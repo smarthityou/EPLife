@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cuit.zhh.eplife.view.activity.CourseShowActivity">
+    <!--顶部导航栏-->
+    <include
+        android:id="@+id/activity_course_show_toolba"
+        layout="@layout/toolbar" />
+    <!-- 每排显示两个-->
+    <GridView
+        android:id="@+id/activity_course_show_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>

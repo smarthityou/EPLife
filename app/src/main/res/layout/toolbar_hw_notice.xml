@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/actionbar_bg"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/toolbar_hw_notice_rg"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dip"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/toolbar_hw_notice_rb_tuijian"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rb_bg_01"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingBottom="6dip"
+                android:paddingTop="6dip"
+                android:text="推荐"
+                android:textColor="@drawable/title_text_sel"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/toolbar_hw_notice_rb_focus"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rb_bg_02"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingBottom="6dip"
+                android:paddingTop="6dip"
+                android:text="关注"
+                android:textColor="@drawable/title_text_sel"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>

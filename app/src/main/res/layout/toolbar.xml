@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/actionbar_bg"
+    android:orientation="horizontal"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <!-- 返回按钮-->
+    <Button
+        android:id="@+id/toolbar_back"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:background="@color/actionbar_bg"
+        android:drawableLeft="@mipmap/de_actionbar_back"
+        android:drawablePadding="3dp"
+        android:gravity="left|center_vertical"
+        android:text="返回"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="@dimen/toolbar_textSize"
+        android:visibility="visible" />
+    <!-- title标题-->
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:text="EPLife"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="@dimen/toolbar_textSize" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:id="@+id/toolbar_right_btn"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:background="@drawable/more" />
+
+        <TextView
+            android:id="@+id/toolbar_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/toolbar_textSize" />
+    </RelativeLayout>
+
+
+</android.support.v7.widget.Toolbar>

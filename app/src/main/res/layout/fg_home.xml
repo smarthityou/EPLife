@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragmentBg"
+    android:orientation="vertical">
+    <!--顶部推荐和关注-->
+    <include
+        android:id="@+id/fg_home_toolbar"
+        layout="@layout/toolbar_hw_notice" />
+    <!--可切换fragment-->
+    <FrameLayout
+        android:id="@+id/fg_home_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

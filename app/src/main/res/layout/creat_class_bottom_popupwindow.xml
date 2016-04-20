@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/click_to_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/popup_bg">
+
+        <LinearLayout
+            android:id="@+id/creat_class_bottom_popupwindow_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <!--tips:从相册中还是照相-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="选取照片来源"
+                android:textColor="@color/gray_color"
+                android:textSize="36px" />
+
+            <include layout="@layout/line_match" />
+            <!--照相-->
+            <Button
+                android:id="@+id/creat_class_bottom_popupwindow_btn_takePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/linearlayout_click"
+                android:text="照相机"
+                android:textColor="#ff4f58"
+                android:textSize="36px" />
+
+            <include layout="@layout/line_match" />
+            <!--相册选取-->
+            <Button
+                android:id="@+id/creat_class_bottom_popupwindow_btn_photo_album"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/linearlayout_click"
+                android:text="从相册选取"
+                android:textColor="@color/bottom_pop_textColor"
+                android:textSize="36px" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="#e2e2e2" />
+
+            <Button
+                android:id="@+id/bottom_popupwindow_btn_cancle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/linearlayout_click"
+                android:text="取消"
+                android:textColor="@color/bottom_pop_textColor"
+                android:textSize="36px" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

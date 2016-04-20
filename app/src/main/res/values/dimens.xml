@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- login页面-->
+    <dimen name="bxMarginTop">60dp</dimen>
+    <dimen name="banxinSize">80sp</dimen>
+    <dimen name="editHigt">48dp</dimen>
+    <dimen name="editPaddingLeft">10dp</dimen>
+    <dimen name="hintText">18sp</dimen>
+    <dimen name="unknowPaddingTop">12dp</dimen>
+    <dimen name="unknowTextSize">12sp</dimen>
+    <dimen name="btnTextSize">14sp</dimen>
+    <dimen name="btnBetweenBtn">26dp</dimen>
+    <dimen name="btnMarginBottom">26dp</dimen>
+    <dimen name="et_padding_left">16dp</dimen>
+    <dimen name="toolbar_textSize">18sp</dimen>
+    <dimen name="fragment_ll_message_setting_high">44dp</dimen>
+    <dimen name="fragment_iv_message_size">24dp</dimen>
+    <dimen name="fragment_iv_user_headImg_marginLeft">15dp</dimen>
+    <dimen name="fragment_tv_textSize">15sp</dimen>
+
+
+</resources>

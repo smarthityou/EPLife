@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragmentBg"
+    android:orientation="vertical"
+    tools:context="com.cuit.zhh.eplife.view.fragment.CenterFragment">
+    <!--用户头像-->
+    <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+        android:id="@+id/fragment_center_img_avatar"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/student_deafult_icon"
+        app:siShape="@drawable/shape_iv"
+        app:siSquare="true" />
+    <!--用户姓名-->
+    <TextView
+        android:id="@+id/fragment_center_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="name" />
+
+    <include layout="@layout/line_match" />
+    <!-- 消息-->
+    <LinearLayout
+        android:id="@+id/fragment_center_ll_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_ll_message_setting_high"
+        android:background="@drawable/linearlayout_click"
+        android:clickable="true">
+        <!--消息图标-->
+        <ImageView
+            android:id="@+id/fragement_iv_message"
+            android:layout_width="@dimen/fragment_iv_message_size"
+            android:layout_height="@dimen/fragment_iv_message_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/fragment_iv_user_headImg_marginLeft"
+            android:background="@mipmap/ims" />
+
+        <!--消息中心-->
+        <TextView
+            android:id="@+id/fragement_tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/fragment_iv_user_headImg_marginLeft"
+            android:text="@string/fragement_center_tv_message"
+            android:textSize="@dimen/fragment_tv_textSize" />
+
+
+        <include layout="@layout/right_arrow" />
+    </LinearLayout>
+
+    <include layout="@layout/line_lack" />
+    <!-- 我参加的活动-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_ll_message_setting_high"
+        android:background="@drawable/linearlayout_click"
+        android:clickable="true">
+        <!--我参加的活动图标-->
+        <ImageView
+            android:layout_width="@dimen/fragment_iv_message_size"
+            android:layout_height="@dimen/fragment_iv_message_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/fragment_iv_user_headImg_marginLeft"
+            android:background="@mipmap/ims" />
+
+        <!--我参加的活动-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/fragment_iv_user_headImg_marginLeft"
+            android:text="@string/fragement_center_tv_join_activity"
+            android:textSize="@dimen/fragment_tv_textSize" />
+
+
+        <include layout="@layout/right_arrow" />
+    </LinearLayout>
+
+    <include layout="@layout/line_lack" />
+    <!-- 关于-->
+    <LinearLayout
+        android:id="@+id/fg_center_ll_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_ll_message_setting_high"
+        android:background="@drawable/linearlayout_click"
+        android:clickable="true">
+        <!--关于图标-->
+        <ImageView
+            android:layout_width="@dimen/fragment_iv_message_size"
+            android:layout_height="@dimen/fragment_iv_message_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/fragment_iv_user_headImg_marginLeft"
+            android:background="@mipmap/ims" />
+
+        <!--关于-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/fragment_iv_user_headImg_marginLeft"
+            android:text="@string/fragement_center_tv_about"
+            android:textSize="@dimen/fragment_tv_textSize" />
+
+
+        <include layout="@layout/right_arrow" />
+    </LinearLayout>
+
+    <include layout="@layout/line_match" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/hello_blank_fragment" />
+
+</LinearLayout>

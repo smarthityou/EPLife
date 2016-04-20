@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fragmentBg"
+    tools:context=".view.activity.RegisterActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+            android:id="@+id/activity_reg_img_avatar"
+            android:layout_width="73dp"
+            android:layout_height="73dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/student_deafult_icon"
+            app:siShape="@drawable/shape_iv"
+            app:siSquare="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="亲，您必须上传头像才能注册哦!!"
+            android:textColor="@color/red" />
+
+        <!-- 账号-->
+        <EditText
+            android:id="@+id/activity_reg_et_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editHigt"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/et"
+            android:gravity="center|left"
+            android:hint="@string/input_name"
+            android:inputType="text"
+            android:maxLength="11"
+            android:paddingLeft="@dimen/et_padding_left"
+            android:textSize="@dimen/hintText" />
+        <!--设置密码-->
+        <EditText
+            android:id="@+id/activity_reg_et_settingPwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editHigt"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/et"
+            android:gravity="center|left"
+            android:hint="@string/settint_pwd"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/et_padding_left"
+            android:textSize="@dimen/hintText" />
+        <!-- 完成按钮-->
+        <Button
+            android:id="@+id/activity_reg_btn_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/shape_btn_finish"
+            android:gravity="center"
+            android:text="@string/finish"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="whiteTextColor">#FFFFFF</color>
+    <color name="hintTextColor">#838383</color>
+    <color name="white">#FFFFFF</color>
+    <color name="activity_registerbtn">#FFFFFF</color>
+    <color name="blackTextColor">#000000</color>
+    <color name="fragmentBg">#efeff4</color>
+    <!-- 灰色字体颜色-->
+    <color name="gray_color">#888</color>
+    <color name="line">#d9d9d9</color>
+    <!-- popup背景颜色-->
+    <color name="popup_bg">#8f000000</color>
+    <!-- ll点击后的颜色（让用户有点击操作的感觉）-->
+    <color name="ll_click">#dcdcdc</color>
+
+    <color name="bottom_pop_textColor">#208AFD</color>
+    <color name="actionbar_bg">#35353a</color>
+    <color name="red">#ff0000</color>
+    <color name="gray_text_color">#C4C8CF</color>
+
+</resources>

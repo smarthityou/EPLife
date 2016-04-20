@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context=".view.activity.LoginActivity">
+
+    <!-- EPLife-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/whiteTextColor"
+        android:textSize="72px" />
+
+    <!-- 输入账号-->
+    <EditText
+        android:id="@+id/activity_login_et_phoneNum"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editHigt"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/et"
+        android:ellipsize="end"
+        android:gravity="center|left"
+        android:hint="请输入您的账号"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/editPaddingLeft"
+        android:singleLine="true"
+        android:textColorHint="@color/hintTextColor"
+        android:textSize="@dimen/hintText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp">
+        <!-- 输入密码框-->
+        <EditText
+            android:id="@+id/activity_login_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editHigt"
+            android:background="@drawable/et"
+            android:ellipsize="end"
+            android:gravity="center|left"
+            android:hint="@string/loginPass"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/editPaddingLeft"
+            android:paddingRight="50dp"
+            android:singleLine="true"
+            android:textColorHint="@color/hintTextColor"
+            android:textSize="@dimen/hintText" />
+        <!-- 看见密码按钮-->
+        <Button
+            android:id="@+id/see_pwd"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_alignRight="@id/activity_login_pwd"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="16dp"
+            android:background="@mipmap/nosee" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- 注册按钮-->
+        <Button
+            android:id="@+id/activity_login_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/shape_regbtn"
+            android:gravity="center"
+            android:text="@string/loginReg"
+            android:textColor="@color/blackTextColor"
+            android:textSize="@dimen/btnTextSize" />
+        <!--登陆按钮-->
+        <Button
+            android:id="@+id/activity_login_loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/activity_login_register"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/shape_btn_login"
+            android:gravity="center"
+            android:text="@string/loginBtn"
+            android:textColor="@color/whiteTextColor"
+            android:textSize="@dimen/btnTextSize" />
+    </RelativeLayout>
+</LinearLayout>

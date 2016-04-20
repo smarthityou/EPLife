@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cuit.zhh.eplife.view.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/activity_main_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <include layout="@layout/line_match" />
+    <!--底部-->
+    <RadioGroup
+        android:id="@+id/main_activity_botton_rg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <!--首页-->
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_bg"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/title_text_sel" />
+        <!--环保活动-->
+        <RadioButton
+            android:id="@+id/rb_activity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="环保活动"
+            android:textColor="@drawable/title_text_sel" />
+        <!--我-->
+        <RadioButton
+            android:id="@+id/rb_center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rb_bg"
+            android:button="@null"
+            android:gravity="center"
+            android:text="我"
+            android:textColor="@drawable/title_text_sel" />
+
+    </RadioGroup>
+
+</LinearLayout>
